@@ -9,7 +9,7 @@ from modoboa.extensions.amavis.lib import (
     create_user_and_use_policy, delete_user
 )
 from .lib import manual_learning_enabled
-from .models import Users
+from .models import Users, Policy
 
 
 @events.observe("UserMenuDisplay")
