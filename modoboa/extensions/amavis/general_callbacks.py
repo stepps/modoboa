@@ -87,11 +87,17 @@ def on_mailboxalias_created(user, alias):
     """
     if not manual_learning_enabled(user) or alias.type != "alias":
         return
-    policy = Policy.objects.get(
-        policy_name=alias.mboxes.all()[0].full_address
-    )
-    email = alias.full_address
-    Users.objects.create(email=email, policy=policy, fullname=email)
+    try:
+        policy = Policy.objects.get(
+            policy_name=alias.mboxes.all()[0].full_address
+        )
+    except Policy.DoesNotExist:
+        return
+    else:
+        email = alias.full_address
+        Users.objects.create(
+            email=email, policy=policy, fullname=email, priority=7
+        )
 
 
 @events.observe("MailboxAliasDeleted")
