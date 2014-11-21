@@ -275,7 +275,8 @@ class AccountFormMail(forms.Form, DynamicForm):
                     continue
                 al = Alias(address=local_part, enabled=account.is_active)
                 al.domain = Domain.objects.get(name=domname)
-                al.save(int_rcpts=[self.mb], creator=user)
+                al.save(int_rcpts=[self.mb])
+                al.post_create(user)
 
         return self.mb
 

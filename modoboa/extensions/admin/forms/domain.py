@@ -234,7 +234,8 @@ class DomainFormOptions(forms.Form):
         if self.cleaned_data["create_aliases"] == "yes":
             events.raiseEvent("CanCreate", user, "mailbox_aliases")
             al = Alias(address="postmaster", domain=domain, enabled=True)
-            al.save(int_rcpts=[mb], creator=user)
+            al.save(int_rcpts=[mb])
+            al.post_create(user)
 
         domain.add_admin(da)
 

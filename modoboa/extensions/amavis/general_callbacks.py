@@ -76,7 +76,7 @@ def on_mailbox_deleted(mailbox):
     """Clean amavis database when a mailbox is removed."""
     if parameters.get_admin("MANUAL_LEARNING") == "no":
         return
-    delete_user_and_policy(mailbox.full_address)
+    delete_user_and_policy("@{0}".format(mailbox.full_address))
 
 
 @events.observe("MailboxAliasCreated")
