@@ -24,7 +24,7 @@ msgstr "Generale"
 #: core/__init__.py:80
 #, fuzzy
 msgid "One or more updates are available"
-msgstr "Non sono disponibili statistiche"
+msgstr "Sono disponibili uno o piú aggionamenti"
 
 #: core/app_settings.py:36
 msgid "Authentication"
@@ -68,8 +68,7 @@ msgstr "plain (debole)"
 
 #: core/app_settings.py:57
 msgid "Scheme used to crypt mailbox passwords"
-msgstr ""
-"Schema utilizzato per la criptazione delle password delle caselle di posta"
+msgstr "Schema utilizzato per la criptazione delle password delle caselle di posta"
 
 #: core/app_settings.py:62
 msgid "Rounds"
@@ -101,7 +100,7 @@ msgstr "Indirizzo del server"
 
 #: core/app_settings.py:85
 msgid "The IP address or the DNS name of the LDAP server"
-msgstr "L'indirizzo IP associato al DNS name del server LDAP"
+msgstr "L'indirizzo IP o il registro DNS del server LDAP"
 
 #: core/app_settings.py:90
 msgid "Server port"
@@ -137,7 +136,7 @@ msgstr "Scegli il metodo di autenticazione da usare"
 
 #: core/app_settings.py:113
 msgid "Bind DN"
-msgstr "collega DN"
+msgstr "Collega DN"
 
 #: core/app_settings.py:116
 msgid ""
@@ -176,8 +175,8 @@ msgid ""
 "An optional filter string (e.g. '(objectClass=person)'). In order to be "
 "valid, it must be enclosed in parentheses."
 msgstr ""
-"Stringa di filtraggio opzionale (p.es '(objectClass=person)'). Per essere "
-"valida deve essere racchiusa tra parentesi."
+"Stringa di filtraggio opzionale (per esempio '(objectClass=person)')."
+"Per essere valida deve essere racchiusa tra parentesi."
 
 #: core/app_settings.py:157
 msgid "User DN template"
@@ -190,7 +189,7 @@ msgid ""
 "placeholder (ie. %(user)s)"
 msgstr ""
 "Il modello utilizzato per comporre un DN dell'utente. Deve contenere un "
-"segnaposto (p.es. %(user)s)"
+"segnaposto (per esempio %(user)s)"
 
 #: core/app_settings.py:168
 msgid "Password attribute"
@@ -206,7 +205,7 @@ msgstr "Active Directory"
 
 #: core/app_settings.py:178
 msgid "Tell if the LDAP server is an Active Directory one"
-msgstr "Segnala se il server LDAP è una Active Directory"
+msgstr "Segnala se il server LDAP è un Active Directory"
 
 #: core/app_settings.py:182
 msgid "Administrator groups"
@@ -228,7 +227,7 @@ msgstr "Base ricerca per i gruppi"
 #: core/app_settings.py:195
 msgid "The distinguished name of the search base used to find groups"
 msgstr ""
-"L'identificatore  (dn:) della base di ricerca utilizzato per trovare i gruppi"
+"L'identificatore (dn:) della base di ricerca utilizzato per trovare i gruppi"
 
 #: core/app_settings.py:200
 msgid "Miscellaneous"
@@ -237,21 +236,21 @@ msgstr "Miscellanea"
 #: core/app_settings.py:203
 #, fuzzy
 msgid "Top notifications check interval"
-msgstr "Spedizione notifiche"
+msgstr "Intervallo massimo di controllo delle notificazioni"
 
 #: core/app_settings.py:206
 #, fuzzy
 msgid "Interval between two top notification checks (in seconds)"
-msgstr "Intervallo tra due controlli delle request di rilascio "
+msgstr "Intervallo tra due controlli di notificaczioni (in secondi)"
 
 #: core/app_settings.py:212
 #, fuzzy
 msgid "Check new versions"
-msgstr "Verifica validità destinatari"
+msgstr "Verificare le nuove versioni"
 
 #: core/app_settings.py:215
 msgid "Automatically checks if a newer version is available"
-msgstr ""
+msgstr "Verificare automaticamente se ci sono nuove versioni disponibili"
 
 #: core/app_settings.py:219
 msgid "Maximum log record age"
@@ -267,7 +266,7 @@ msgstr "Elementi per pagina"
 
 #: core/app_settings.py:228
 msgid "Number of displayed items per page"
-msgstr "Numero degli elementi visualizzati in ciascuna pagina"
+msgstr "Numero degli elementi visualizzati in ogni pagina"
 
 #: core/app_settings.py:233
 msgid "Default top redirection"
@@ -329,19 +328,21 @@ msgstr "Conferma"
 
 #: core/forms.py:64
 msgid "Old password mismatchs"
-msgstr "La vecchia password non corrisponde"
+msgstr "La vecchia password non coincide"
 
 #: core/forms.py:71
 msgid "Passwords mismatch"
-msgstr "La password non corrisponde"
+msgstr "La password non coincide"
 
 #: core/models.py:53
 msgid "Allow mailboxes access"
-msgstr ""
+msgstr "Permettere l'accesso alla posta in arrivo"
 
 #: core/models.py:55
 msgid "Allow this administrator to access user mailboxes"
 msgstr ""
+"Permettere a questo amministratore di accedere alla "
+"posta in arrivo degli utenti"
 
 #: core/models.py:58
 msgid "password"
@@ -349,7 +350,7 @@ msgstr "password"
 
 #: core/models.py:60
 msgid "last login"
-msgstr "ultimo login"
+msgstr "ultimo accesso"
 
 #: core/models.py:89
 msgid "You can't delete your own account"
@@ -379,7 +380,7 @@ msgstr "L'utente '%s' deve avere un indirizzo email valido"
 #: core/models.py:375
 #, python-format
 msgid "username and email fields must not differ for '%s'"
-msgstr "I campi nome utente e email di '%s' devono avere lo stesso valore"
+msgstr "I campi nome utente ed email di '%s' devono coincidere"
 
 #: core/models.py:477
 msgid "added"
@@ -414,17 +415,17 @@ msgstr "Informazioni varie su Modoboa"
 #: core/templates/core/information.html:5
 #, fuzzy
 msgid "One or more updates are available!"
-msgstr "Non sono disponibili statistiche"
+msgstr "Sono disponibili uno o piú aggionamenti"
 
 #: core/templates/core/information.html:6
 msgid "Check the following list to find the component(s) that can be updated."
-msgstr ""
+msgstr "Controlla se ci sono aggiornamenti per questa lista di componenti."
 
 #: core/templates/core/information.html:10
 #, fuzzy
 #| msgid "Authentication"
 msgid "Applications"
-msgstr "Autenticazione"
+msgstr "Applicazioni"
 
 #: core/templates/core/information.html:14
 #: core/templates/core/information.html:36
@@ -433,13 +434,13 @@ msgstr "Nome"
 
 #: core/templates/core/information.html:15
 msgid "Installed version"
-msgstr ""
+msgstr "Versione installata"
 
 #: core/templates/core/information.html:16
 #, fuzzy
 #| msgid "Last login"
 msgid "Last version"
-msgstr "Ultimo login"
+msgstr "Ultimo accesso"
 
 #: core/templates/core/information.html:17
 msgid "Description"
@@ -451,11 +452,11 @@ msgstr "Utenti attivi"
 
 #: core/templates/core/information.html:37
 msgid "Group name"
-msgstr "Nome gruppo"
+msgstr "Nome del gruppo"
 
 #: core/templates/core/information.html:38
 msgid "Last login"
-msgstr "Ultimo login"
+msgstr "Ultimo accesso"
 
 #: core/templates/core/logs.html:2 core/templatetags/core_tags.py:56
 msgid "Logs"
@@ -513,7 +514,7 @@ msgstr "Profilo"
 
 #: core/templates/core/user_profile.html:2
 msgid "Update your personal information"
-msgstr "Aggiorna le informazioni personali"
+msgstr "Aggiorna le tue informazioni personali"
 
 #: core/templates/core/user_profile.html:8 lib/form_utils.py:359
 msgid "Update"
@@ -531,7 +532,7 @@ msgstr "Esci"
 #, fuzzy
 #| msgid "Welcome to Modoboa"
 msgid "The core part of Modoboa"
-msgstr "Benvenuti in Modoboa"
+msgstr "La parte principale di Modoboa"
 
 #: core/views/admin.py:52
 msgid "Parameters saved"
@@ -540,11 +541,11 @@ msgstr "Parametri salvati"
 #: core/views/auth.py:33
 #, python-format
 msgid "User '%s' successfully logged in"
-msgstr "L'utente '%s? è correttamente registrato"
+msgstr "L'utente '%s' ha effettuato l'accesso correttamente"
 
 #: core/views/auth.py:48
 msgid "Your username and password didn't match. Please try again."
-msgstr "Il tuo username e/o la tua password non corrispondono. Riprova."
+msgstr "Il tuo username e la tua password non coincidono. Riprova."
 
 #: core/views/auth.py:76
 #, python-format
@@ -575,7 +576,7 @@ msgstr "Accesso negato"
 
 #: lib/form_utils.py:84
 msgid "Submit"
-msgstr ""
+msgstr "Invio"
 
 #: lib/form_utils.py:117 lib/form_utils.py:120
 msgid "Invalid request"
@@ -608,7 +609,7 @@ msgstr "Super amministratore"
 
 #: templates/404.html:4 templates/500.html:4
 msgid "Sorry"
-msgstr "Dispiace"
+msgstr "Siamo spiacenti"
 
 #: templates/404.html:5
 msgid "The requested page does not exist."
@@ -616,7 +617,7 @@ msgstr "La pagina richiesta non esiste"
 
 #: templates/500.html:5
 msgid "An internal error occured."
-msgstr "È intervenuto un errore interno"
+msgstr "Si è verificato un errore interno"
 
 #: templates/common/email_searchbar.html:5
 msgid "Search..."
@@ -641,7 +642,7 @@ msgstr "Errore:"
 #: templates/common/generic_field.html:11
 #: templates/common/generic_fields_group.html:8
 msgid "Help:"
-msgstr "Aiuto"
+msgstr "Aiuto:"
 
 #: templates/common/generic_modal.html:6
 #: templates/common/generic_modal.html:13 templates/common/wizard_forms.html:6
@@ -659,7 +660,7 @@ msgstr "Successivo"
 
 #: templates/registration/login.html:10
 msgid "Welcome to Modoboa"
-msgstr "Benvenuti in Modoboa"
+msgstr "Benvenuti a Modoboa"
 
 #: templates/registration/login.html:41
 msgid "Remember me"
@@ -667,4 +668,4 @@ msgstr "Ricordami"
 
 #: templates/registration/login.html:44
 msgid "Log in"
-msgstr "Registrati"
+msgstr "Accedi"
